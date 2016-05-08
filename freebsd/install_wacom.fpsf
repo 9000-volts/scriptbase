@@ -1,0 +1,8 @@
+Installs Wacom Drivers for FreeBSD
+xf86-input-wacom webcamd xorg-server
+/boot/loader.conf
+	cuse4bsd_load="YES"
+/etc/rc.conf
+	devd_enable="YES"
+	hald_enable="YES"
+	webcamd_enable="YES"
